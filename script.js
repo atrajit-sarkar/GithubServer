@@ -1,4 +1,7 @@
-const repoURL = 'https://api.github.com/repos/gongobongofounder/Stree2/contents/'; // Replace with your GitHub repo details
+const username='gongobongofounder' //write your server github username 
+const reponame='Stree2'             // Write your server github repo name
+const repoURL = `https://api.github.com/repos/${username}/${reponame}/contents/`; // Replace with your GitHub repo details
+
 
 async function fetchMedia() {
     try {
@@ -20,7 +23,7 @@ async function fetchMedia() {
                     const a = document.createElement('a');
                     const baseName = file.name.substring(0, file.name.lastIndexOf('.'));  // Extracts up to the last dot
 
-                    a.href = `https://raw.githubusercontent.com/gongobongofounder/Stree2/main/${baseName}`;
+                    a.href = `https://raw.githubusercontent.com/${username}/${reponame}/main/${baseName}`;
                     img.src = file.download_url;
                     img.alt = file.name;
                     imagecard.appendChild(a);
