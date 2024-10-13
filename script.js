@@ -1,5 +1,5 @@
-const username = 'Somu6969' //write your server github username 
-const reponame = 'Dashami-Scooty'  // Write your server github repo name
+const username = 'gongobongofounder' //write your server github username 
+const reponame = 'Stree2'  // Write your server github repo name
 const repoURL = `https://api.github.com/repos/${username}/${reponame}/contents/`; // Replace with your GitHub repo details
 
 //Media Data Types
